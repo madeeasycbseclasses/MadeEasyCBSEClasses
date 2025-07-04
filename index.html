@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MADE EASY CBSE CLASSES BEGUSARAI</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #1e1e2f;
+      color: #eee;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(to right, #7f5af0, #2cb67d);
+      color: white;
+      text-align: center;
+      padding: 80px 20px 100px;
+    }
+
+    header img {
+      width: 120px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 20px auto;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    .button {
+      background: #ffdd57;
+      color: #000;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background: #ffc107;
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(145deg, #252537, #1e1e2f);
+    }
+
+    .section-heading {
+      font-size: 2.3em;
+      color: #ffdd57;
+      margin-bottom: 30px;
+    }
+
+    .course-card {
+      background: #2b2b40;
+      color: white;
+      padding: 25px;
+      margin: 20px auto;
+      max-width: 500px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+      transition: 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: scale(1.05);
+      background: #3b3b5b;
+    }
+
+    .testimonial {
+      font-style: italic;
+      color: #aaa;
+      max-width: 600px;
+      margin: 20px auto;
+      transition: 0.3s;
+    }
+
+    .testimonial:hover {
+      color: #fff;
+      transform: scale(1.02);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 280px;
+      height: 180px;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+      filter: brightness(1.2);
+    }
+
+    footer {
+      background: #0f0f1e;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    a {
+      color: #2cb67d;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-float img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .gallery img {
+        width: 90%;
+        height: auto;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+
+      header img {
+        width: 90px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- WhatsApp Chat Button -->
+  <a class="whatsapp-float" href="https://wa.me/919xxxx210" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="Chat on WhatsApp" />
+  </a>
+
+  <!-- Header with Logo -->
+  <header>
+    <img src="logo.png" alt="Made Easy Logo" style="width:245px;height:245px" />
+    <h1>MADE EASY CBSE CLASSES BEGUSARAI</h1>
+    <p>Top coaching institute for classes 9–12, JEE/NEET foundation & competitive exams. Learn with the best!</p>
+    <a class="button" href="tel:+91xxxxxxxxxx">📞 Join Now</a>
+  </header>
+
+  <!-- About Section -->
+  <section>
+    <h2 class="section-heading">About Us</h2>
+    <p>We help students achieve academic success through expert guidance, practical learning, and personalized support. Trusted by hundreds in Begusarai.</p>
+  </section>
+
+  <!-- Courses Section -->
+  <section>
+    <h2 class="section-heading">Courses Offered</h2>
+    <div class="course-card">
+      <h3>Class 9–12 Classes</h3>
+      <p>Science, Maths, English, Social Studies</p>
+    </div>
+    <div class="course-card">
+      <h3>JEE/NEET Foundation</h3>
+      <p>Conceptual clarity, tests & doubt-solving sessions</p>
+    </div>
+    <div class="course-card">
+      <h3> Exams</h3>
+      <p>more</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section>
+    <h2 class="section-heading">Student Reviews</h2>
+    <p class="testimonial">"Best coaching for CBSE board</p>
+    <p class="testimonial">"NEET foundation </p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section>
+    <h2 class="section-heading">Our Gallery</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200?text=Classroom" alt="Classroom">
+      <img src="https://via.placeholder.com/300x200?text=Students" alt="Students">
+      <img src="https://via.placeholder.com/300x200?text=Event" alt="Event">
+      <img src="https://via.placeholder.com/300x200?text=Awards" alt="Facility">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section>
+    <h2 class="section-heading">Contact Us</h2>
+    <p>Email: <a href="mgmail">gmail</a></p>
+    <p>Phone: <a href="tel:+xxxxxx">+91-xxxxxxxxx</a></p>
+    <p>Address: Behind Mamta Hotel, Professor Colony, Begusarai, Bihar – 851101</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; MADE EASY CBSE CLASSES BEGUSARAI</p>
+  </footer>
+
+</body>
+</html>
