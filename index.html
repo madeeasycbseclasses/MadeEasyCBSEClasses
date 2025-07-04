@@ -57,6 +57,30 @@
       transform: scale(1.1);
     }
 
+    .social-icons {
+      margin-top: 25px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: white;
+      padding: 4px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+    }
+
     section {
       padding: 60px 20px;
       text-align: center;
@@ -220,12 +244,21 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="Chat on WhatsApp" />
   </a>
 
-  <!-- Header with Logo -->
+  <!-- Header with Logo and Social Links -->
   <header>
     <img src="logo.png" alt="Made Easy Logo" style="width:245px;height:245px" />
     <h1>MADE EASY CBSE CLASSES BEGUSARAI</h1>
     <p>Top coaching institute for classes 6–12, JEE/NEET foundation & competitive exams. Learn with the best!</p>
     <a class="button" href="tel:+91xxxxxxxxxx">📞 Join Now</a>
+
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@yourchannel" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
+      </a>
+      <a href="https://www.instagram.com/made_easy_begusarai" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" />
+      </a>
+    </div>
   </header>
 
   <!-- About Section -->
@@ -246,7 +279,7 @@
       <p>Conceptual clarity, tests & doubt-solving sessions</p>
     </div>
     <div class="course-card" data-aos="flip-up">
-      <h3> Exams</h3>
+      <h3>Exams</h3>
       <p>more</p>
     </div>
   </section>
@@ -254,8 +287,8 @@
   <!-- Testimonials -->
   <section data-aos="fade-left">
     <h2 class="section-heading">Student Reviews</h2>
-    <p class="testimonial">"Best coaching for CBSE board</p>
-    <p class="testimonial">"NEET foundation </p>
+    <p class="testimonial">"Best coaching for CBSE board"</p>
+    <p class="testimonial">"NEET foundation support was excellent."</p>
   </section>
 
   <!-- Gallery Section -->
@@ -280,8 +313,8 @@
   <!-- Contact Section -->
   <section data-aos="fade-up">
     <h2 class="section-heading">Contact Us</h2>
-    <p>Email: <a href="mgmail">gmail</a></p>
-    <p>Phone: <a href="tel:+xxxxxx">+91-xxxxxxxxx</a></p>
+    <p>Email: <a href="mailto:your-email@gmail.com">your-email@gmail.com</a></p>
+    <p>Phone: <a href="tel:+91xxxxxxxxxx">+91-xxxxxxxxxx</a></p>
     <p>Address: Behind Mamta Hotel, Professor Colony, Begusarai, Bihar – 851101</p>
   </section>
 
