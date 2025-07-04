@@ -119,6 +119,26 @@
       filter: brightness(1.2);
     }
 
+    .map-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+      margin-top: 20px;
+    }
+
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
     footer {
       background: #0f0f1e;
       color: #ccc;
@@ -136,7 +156,6 @@
       text-decoration: underline;
     }
 
-    /* WhatsApp Floating Button */
     .whatsapp-float {
       position: fixed;
       bottom: 25px;
@@ -156,7 +175,6 @@
       transform: scale(1.1);
     }
 
-    /* Animations */
     @keyframes fadeInDown {
       0% { opacity: 0; transform: translateY(-40px); }
       100% { opacity: 1; transform: translateY(0); }
@@ -182,6 +200,18 @@
       }
     }
   </style>
+
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    });
+  </script>
 </head>
 <body>
 
@@ -194,53 +224,61 @@
   <header>
     <img src="logo.png" alt="Made Easy Logo" style="width:245px;height:245px" />
     <h1>MADE EASY CBSE CLASSES BEGUSARAI</h1>
-    <p>Top coaching institute for classes 9–12, JEE/NEET foundation & competitive exams. Learn with the best!</p>
+    <p>Top coaching institute for classes 6–12, JEE/NEET foundation & competitive exams. Learn with the best!</p>
     <a class="button" href="tel:+91xxxxxxxxxx">📞 Join Now</a>
   </header>
 
   <!-- About Section -->
-  <section>
+  <section data-aos="fade-up">
     <h2 class="section-heading">About Us</h2>
     <p>We help students achieve academic success through expert guidance, practical learning, and personalized support. Trusted by hundreds in Begusarai.</p>
   </section>
 
   <!-- Courses Section -->
-  <section>
+  <section data-aos="fade-right">
     <h2 class="section-heading">Courses Offered</h2>
-    <div class="course-card">
-      <h3>Class 9–12 Classes</h3>
+    <div class="course-card" data-aos="flip-up">
+      <h3>Class 6–12 Classes</h3>
       <p>Science, Maths, English, Social Studies</p>
     </div>
-    <div class="course-card">
+    <div class="course-card" data-aos="flip-up">
       <h3>JEE/NEET Foundation</h3>
       <p>Conceptual clarity, tests & doubt-solving sessions</p>
     </div>
-    <div class="course-card">
+    <div class="course-card" data-aos="flip-up">
       <h3> Exams</h3>
       <p>more</p>
     </div>
   </section>
 
   <!-- Testimonials -->
-  <section>
+  <section data-aos="fade-left">
     <h2 class="section-heading">Student Reviews</h2>
     <p class="testimonial">"Best coaching for CBSE board</p>
     <p class="testimonial">"NEET foundation </p>
   </section>
 
   <!-- Gallery Section -->
-  <section>
+  <section data-aos="zoom-in">
     <h2 class="section-heading">Our Gallery</h2>
     <div class="gallery">
-      <img src="https://via.placeholder.com/300x200?text=Classroom" alt="Classroom">
-      <img src="https://via.placeholder.com/300x200?text=Students" alt="Students">
-      <img src="https://via.placeholder.com/300x200?text=Event" alt="Event">
-      <img src="https://via.placeholder.com/300x200?text=Awards" alt="Facility">
+      <img src="https://via.placeholder.com/300x200?text=Classroom" alt="Classroom" data-aos="zoom-in">
+      <img src="https://via.placeholder.com/300x200?text=Students" alt="Students" data-aos="zoom-in">
+      <img src="https://via.placeholder.com/300x200?text=Event" alt="Event" data-aos="zoom-in">
+      <img src="https://via.placeholder.com/300x200?text=Awards" alt="Facility" data-aos="zoom-in">
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section data-aos="fade-up">
+    <h2 class="section-heading">Find Us on Map</h2>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps?q=MADE+EASY+CBSE+CLASSES+Begusarai&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section>
+  <section data-aos="fade-up">
     <h2 class="section-heading">Contact Us</h2>
     <p>Email: <a href="mgmail">gmail</a></p>
     <p>Phone: <a href="tel:+xxxxxx">+91-xxxxxxxxx</a></p>
